@@ -24,15 +24,24 @@
         h1 { font-size: 22px; margin-bottom: 20px; }
         p { color: #c9d1d9; font-size: 16px; line-height: 1.5; }
         .btn {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
             margin-top: 25px;
-            padding: 14px 20px;
-            background-color: #238636;
-            color: #ffffff;
+            padding: 12px 20px;
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            color: #c9d1d9;
             text-decoration: none;
             font-weight: bold;
             border-radius: 6px;
             font-size: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #30363d;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -41,8 +50,11 @@
         <h1>🚨 ACCESSO NEGATO: ERRORE 403 (PIGRIZIA ESTREMA)</h1>
         <p>Bel tentativo! Hai cercato di saltare direttamente in fondo senza leggere tutta la lettera di Babbo Natale, vero?</p>
         <p><strong>Non è questo il link per i regali, fannullone!</strong></p>
-        <p>Torna immediatamente su WhatsApp, prenditi un caffè e leggiti tutto il messaggio dall'inizio alla fine come fanno le persone serie.</p>
-        <a href="https://wa.me/?text=Ammetto%20la%20mia%20colpa%3A%20ho%20provato%20a%20saltare%20la%20lettura%20e%20sono%20stato%20beccato%20dal%20sistema!%20%F0%9F%9A%A8" class="btn">Ammetto la colpa e torno a leggere</a>
+        <p>Torna indietro, prenditi un caffè e leggiti tutto il messaggio dall'inizio alla fine come fanno le persone serie.</p>
+        
+        <a href="javascript:history.back()" class="btn">
+            <span>↩️</span> Torna immediatamente a leggere il contenuto
+        </a>
     </div>
 </body>
 </html>
